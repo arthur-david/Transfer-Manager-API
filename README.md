@@ -35,21 +35,21 @@ Before starting it is necessary some adjustments to connect to the Database:
 In the following files: "transationmanager/src/main/resources/application-dev.properties", and "transationmanager/src/main/resources/application-test.properties" change:
 <br/>
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/somapay_api
+<code>spring.datasource.url=jdbc:postgresql://localhost:5432/somapay_api
 <br/>
 spring.datasource.username=postgres
 <br/>
-spring.datasource.password=741852
+spring.datasource.password=741852</code>
 <br/>
 
 for:
 <br/>
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/{your_data_base}
+<code>spring.datasource.url=jdbc:postgresql://localhost:5432/{your_data_base}
 <br/>
 spring.datasource.username={your_username}
 <br/>
-spring.datasource.password={your_password}
+spring.datasource.password={your_password}</code>
 
 <br/>
 
