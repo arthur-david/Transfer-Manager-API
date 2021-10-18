@@ -2,26 +2,26 @@
 
 This is a REST API project, based on a challenge proposed by the company Somapay, which consists of creating a REST API that has functionalities to create companies, create employees, show company balance, show employee balance and transfer money from company to employee, using Java 11, Spring and PostgreSQL. However, some new features were created such as: Show all companies, show all company employees, delete company and delete company employee. To test all endpoints I chose to use Postman, here is the list of all endpoints:
 <br/>
-- Create company(Method POST): `localhost:8080/companies`
+- Create company(Method POST): <code>localhost:8080/companies</code>
 <br/>
-- Show all companies(Method GET): `localhost:8080/companies`
+- Show all companies(Method GET): <code>localhost:8080/companies</code>
 <br/>
-- Show a company(Method GET): `localhost:8080/companies/{id}`
+- Show a company(Method GET): <code>localhost:8080/companies/{id}</code>
 <br/>
-- Delete a company(Method DELETE): `localhost:8080/companies/{id}`
+- Delete a company(Method DELETE): <code>localhost:8080/companies/{id}</code>
 <br/>
-- Create a employee(Method POST): `localhost:8080/companies/{id}/employees`
+- Create a employee(Method POST): <code>localhost:8080/companies/{id}/employees</code>
 <br/>
-- Show all employees(Method GET): `localhost:8080/companies/{id}/employess`
+- Show all employees(Method GET): <code>localhost:8080/companies/{id}/employess</code>
 <br/>
-- Show a employee(Method GET): `localhost:8080/companies/{id1}/employess/{id2}`
+- Show a employee(Method GET): <code>localhost:8080/companies/{id1}/employess/{id2}</code>
 <br/>
-- Delete a employee(Method DELETE): `localhost:8080/companies/{id1}/employess/{id2}`
+- Delete a employee(Method DELETE): <code>localhost:8080/companies/{id1}/employess/{id2}</code>
 <br/>
-- Transferring company balance to an employee(Method PUT): `localhost:8080/companies/{id1}/employess/{id2}`
+- Transferring company balance to an employee(Method PUT): <code>localhost:8080/companies/{id1}/employess/{id2}</code>
 <br/>
 
-Import the `somapay-api.postman_collection.json` file into your Postman to run.
+Import the <code>somapay-api.postman_collection.json</code> file into your Postman to run.
 <br/>
 
 I learned a lot from this challenge! Hope you like it!
