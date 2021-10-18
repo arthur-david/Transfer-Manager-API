@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "a5a92c4e-9e21-4283-b7d2-3edcc46a10a6",
+		"name": "somapay-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Apple\",\n    \"balance\": 500000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "companies-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "company-Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Carlos Montero\",\n    \"balance\": 900\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/companies/3/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"3",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies/1/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies/3/employees/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"3",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/companies/3/employees/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"3",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer-balance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/companies/1/employees/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"1",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
