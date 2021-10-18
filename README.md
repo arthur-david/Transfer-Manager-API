@@ -32,7 +32,7 @@ I learned a lot from this challenge! Hope you like it!
 
 Before starting it is necessary some adjustments to connect to the Database:
 
-In the following files: "transationmanager/src/main/resources/application-dev.properties", and "transationmanager/src/main/resources/application-test.properties" change:
+In the following files: <code>transationmanager/src/main/resources/application-dev.properties</code>, and <code>transationmanager/src/main/resources/application-test.properties</code> change:
 <br/>
 
 <code>spring.datasource.url=jdbc:postgresql://localhost:5432/somapay_api
